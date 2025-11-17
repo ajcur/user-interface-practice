@@ -109,3 +109,45 @@ h6 {
 .dropdown-item + .dropdown-item {
     border-top: 0;
 }
+
+.image-carousel-block {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(2, max-content);
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.image-frame {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-images {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+}
+
+.carousel-images img {
+    width: 500px;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.carousel-legend {
+    cursor: pointer;
+    justify-self: center;
+    grid-column: 1 / 4;
+    display: flex;
+}
